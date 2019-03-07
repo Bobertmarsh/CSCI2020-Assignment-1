@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane fx:id="pane" prefHeight="500.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+	         <Circle fx:id="cMain" centerX="250.0" centerY="250.0" fill="WHITE" radius="125.0" stroke="BLACK" strokeType="INSIDE" />
+	         <Circle fx:id="p1" centerX="250.0" centerY="250.0" fill="RED" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+	         <Circle fx:id="p2" centerX="250.0" centerY="250.0" fill="RED" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+	         <Circle fx:id="p3" centerX="250.0" centerY="250.0" fill="RED" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+             <Polygon fx:id="triangle" fill="White" stroke="BLACK" strokeType="INSIDE">
+             </Polygon>
+	         <Label fx:id="label1" layoutX="250" layoutY="250" text="1">
+               <font>
+                  <Font size="36.0" />
+               </font></Label>
+	         <Label fx:id="label2" layoutX="250" layoutY="250" text="2">
+               <font>
+                  <Font size="36.0" />
+               </font></Label>
+	         <Label fx:id="label3" layoutX="250" layoutY="250" text="3">
+               <font>
+                  <Font size="36.0" />
+               </font></Label>
+
+         </children>
+      </Pane>
+   </children>
+</GridPane>
